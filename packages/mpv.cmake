@@ -18,7 +18,9 @@ ExternalProject_Add(mpv
         mujs
         vulkan
         shaderc
-    GIT_REPOSITORY git://github.com/mpv-player/mpv.git
+        crossc
+    GIT_REPOSITORY git://github.com/rossy/mpv.git
+    GIT_TAG ra-d3d
     UPDATE_COMMAND ""
     CONFIGURE_COMMAND ${EXEC}
         PKG_CONFIG=pkg-config
